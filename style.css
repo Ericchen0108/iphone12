@@ -62,3 +62,37 @@ body {
     transform-origin: top;
     transform: skewX(-47deg);
 }
+
+@media (max-width: 690px)
+{
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 50vh;
+        min-height: 100%;
+    }
+
+    .iphone {
+        height: 205px;
+        width: 115px;
+        box-shadow: -60px 55px 6px rgba(0,0,0,0.1);
+    }
+    
+    .iphone:hover {
+        box-shadow: -90px 85px 9px rgba(0,0,0,0.1);
+    }
+    
+    .iphone:before {
+        left: -45px;
+        width: 45px;
+        background-size: 15px;
+    }
+    
+    .iphone:after {
+        bottom: -41px;
+        height: 41px;
+        background-size: 15px;
+    }
+}

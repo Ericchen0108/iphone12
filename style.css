@@ -80,7 +80,7 @@ body {
         box-shadow: -60px 55px 6px rgba(0,0,0,0.1);
     }
     
-    .iphone:hover {
+    .iphone:hover :active {
         box-shadow: -90px 85px 9px rgba(0,0,0,0.1);
     }
     

@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    min-height: 100%;
+    background-color: rgb(237, 243, 248);
+}
+
+.iphone {
+    position: relative;
+    height: 410px;
+    width: 230px;
+    background: url("iPhone.png") white;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-40deg) skew(20deg, 10deg);
+    box-shadow: -120px 110px 6px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.iphone:hover {
+    transform: rotate(-40deg) skew(20deg, 10deg) translate(30px, -30px);
+    box-shadow: -150px 140px 9px rgba(0,0,0,0.1);
+}
+
+.iphone:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -90px;
+    width: 90px;
+    height: 100%;
+    background: url("text.png") #F6F6F6;
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: right;
+    transform: skewY(-43deg);
+}
+
+.iphone:after {
+    content: '';
+    position: absolute;
+    bottom: -82px;
+    left: 0;
+    width: 100%;
+    height: 82px;
+    background: url("logo.png") #E6E6E6;
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: top;
+    transform: skewX(-47deg);
+}
